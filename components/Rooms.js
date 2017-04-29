@@ -1,7 +1,8 @@
 // Include React
 var React = require("react");
 
-var socket = io.connect('http://localhost:8080');
+var socket = io.connect('http://sleepy-bayou-48070.herokuapp.com');
+//var socket = io.connect('http://localhost:8080');
 
 class Hand extends React.Component {
     constructor(props) {

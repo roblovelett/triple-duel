@@ -8,8 +8,8 @@ var Chat = require("./game/Chat");
 var Rooms = require("./Rooms");
 var LittleBoards = require("./LittleBoards");
 
-//var socket = io.connect('http://stormy-dawn-97956.herokuapp.com');
-var socket = io.connect('http://localhost:8080');
+var socket = io.connect('http://sleepy-bayou-48070.herokuapp.com');
+//var socket = io.connect('http://localhost:8080');
 
 var Main = React.createClass({
     //class Main extends React.Component {
