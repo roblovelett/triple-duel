@@ -7,7 +7,7 @@ var React = require("react");
 const socket = io.connect('http://triple-duel-backup.herokuapp.com/');
 // local
 // var socket = io.connect('http://localhost:8080');
-
+//
 class Hand extends React.Component {
     constructor(props) {
         super(props);
