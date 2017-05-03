@@ -2,11 +2,11 @@
 var React = require("react");
 
 // production
-//var socket = io.connect('http://sleepy-bayou-48070.herokuapp.com');
+// var socket = io.connect('http://triple-duel.herokuapp.com');
 // backup
-// socket = io.connect('https://guarded-brook-46235.herokuapp.com/');
+socket = io.connect('https://triple-duel-backup.herokuapp.com/');
 // local
-var socket = io.connect('http://localhost:8080');
+// var socket = io.connect('http://localhost:8080');
 
 class Hand extends React.Component {
     constructor(props) {
