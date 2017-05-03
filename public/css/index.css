@@ -236,6 +236,10 @@ button.btn-floating {
   border: none; }
 
 /* MIXINS */
+span {
+  line-height: 40%;
+  margin-right: 3px; }
+
 /* COLOR PALETTE */
 /* FONT PALETTE */
 .default {
