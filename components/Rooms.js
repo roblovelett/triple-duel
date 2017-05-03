@@ -2,9 +2,9 @@
 var React = require("react");
 
 // production
-// var socket = io.connect('https://triple-duel.herokuapp.com');
+// var socket = io.connect('http://triple-duel.herokuapp.com');
 // backup
-socket = io.connect('https://triple-duel-backup.herokuapp.com/');
+socket = io.connect('http://triple-duel-backup.herokuapp.com/');
 // local
 // var socket = io.connect('http://localhost:8080');
 
