@@ -14,10 +14,14 @@
         "dialect": "mysql"
     },
     "production": {
-        "username": "b3e1278355f5ab",
-        "password": "4ccb7825",
-        "database": "heroku_1e4f56b859daa7c",
+        "username": "b7f5828e3d79f9",
+        "password": "eaab955c",
+        "database": "heroku_b73dab68db4fd3a",
         "host": "us-cdbr-iron-east-03.cleardb.net",
         "dialect": "mysql"
     }
 }
+
+
+// triple-duel-backup db
+// mysql://b7f5828e3d79f9:eaab955c@us-cdbr-iron-east-03.cleardb.net/heroku_b73dab68db4fd3a?reconnect=true
