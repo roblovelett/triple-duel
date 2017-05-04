@@ -12,7 +12,6 @@ class LittleBoards extends React.Component {
     }
 
     getData() {
-			
         axios.get('leaderboard')
 					.then((res) => {
 						this.setState({records: res.data})
@@ -29,16 +28,20 @@ class LittleBoards extends React.Component {
 			return this.state.records.map((record) => {
 				console.log(record.id);
 				return(
-					<li
+					<tr
 						key={record.id}
 						className='record'>
-						{record.wins}
-					</li>
+						<td>{record.User.name}</td>
+						<td>{record.wins}</td>
+						<td>{record.losses}</td>
+						{/*<td>{record.disconnects}</td>*/}
+					</tr>
 				)
 			});
 		}
 
     render() {
+<<<<<<< HEAD
         console.log('frm here', this.state.records);
         return (
             <div className='wrapper'>
@@ -69,6 +72,19 @@ class LittleBoards extends React.Component {
 					</div>
 				</div>
 			</div>
+=======
+      console.log('frm here', this.state.records);
+      return (
+        <div className='leaderboards'>
+					<table className='leaderboards-table'>
+						<th>User Name</th>
+						<th>Wins</th>
+						<th>Losses</th>
+						{/*<th>disconnects</th>*/}
+						{this.renderRecords()}
+					</table>
+				</div>
+>>>>>>> 031167b6789b900c705eb680700cf26eb3b84ad6
         );
     }
 };

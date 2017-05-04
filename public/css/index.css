@@ -311,22 +311,23 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 110%;
-    font-size: 24px; }
-    .gu-mirror .powers div {
-      font-family: Kefa-Regular;
-      color: white;
-      text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; }
-    .gu-mirror .powers .powers-middle {
-      display: flex;
-      flex-direction: row; }
-    .gu-mirror .powers .powers-top {
-      align-items: center;
-      margin: 3px 0px 0px 6px; }
-    .gu-mirror .powers .powers-bottom {
-      align-items: center;
-      margin: 0px 0px 0px 6px; }
-  .gu-mirror .powers > div {
-    flex-grow: 1; }
+    font-size: 24px;
+    font-family: Kefa-Regular;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; }
+  .gu-mirror .powers:nth-of-type(1) {
+    margin-left: 20px; }
+  .gu-mirror .powers:nth-of-type(2) {
+    margin-top: 30px; }
+  .gu-mirror .powers:nth-of-type(3) {
+    margin-top: 30px;
+    margin-left: 30px; }
+  .gu-mirror .powers:nth-of-type(4) {
+    margin-left: 20px;
+    margin-top: 55px; }
+
+.powers > div {
+  flex-grow: 1; }
 
 /* USER INTERFACE */
 .btn {
@@ -469,10 +470,17 @@ body {
   display: flex; }
   .game .hand {
     /*padding: 3px;
+<<<<<<< HEAD
         border-radius: 6px;
         border: 2px solid $brown;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
         background-color: $sh-brown;*/
+=======
+    border-radius: 6px;
+    border: 2px solid $brown;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+    background-color: $sh-brown;*/
+>>>>>>> 031167b6789b900c705eb680700cf26eb3b84ad6
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -498,22 +506,20 @@ body {
       z-index: 10;
       display: flex;
       flex-direction: column;
-      line-height: 110%; }
-      .game .card .powers div {
-        font-family: Kefa-Regular, Helvetica, sans-serif;
-        color: white;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
-      .game .card .powers .powers-middle {
-        display: flex;
-        flex-direction: row; }
-      .game .card .powers .powers-top {
-        align-items: center;
-        margin: 3px 0px 0px 3px; }
-      .game .card .powers .powers-bottom {
-        align-items: center;
-        margin: 0px 0px 0px 3px; }
-    .game .card .powers > div {
-      flex-grow: 1; }
+      line-height: 110%;
+      font-family: Kefa-Regular, Helvetica, sans-serif;
+      color: white;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+    .game .card .powers:nth-of-type(1) {
+      margin-left: 15px; }
+    .game .card .powers:nth-of-type(2) {
+      margin-top: 22px; }
+    .game .card .powers:nth-of-type(3) {
+      margin-top: 22px;
+      margin-left: 21px; }
+    .game .card .powers:nth-of-type(4) {
+      margin-left: 15px;
+      margin-top: 37px; }
   .game .board {
     display: flex;
     flex-direction: row;
