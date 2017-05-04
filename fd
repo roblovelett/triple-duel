@@ -1,0 +1,47 @@
+[33mcommit f1539552ec77040ab78a15d0db695fb8730f85fd[m
+Author: Fernando Baz <Fernando@BazNakauma-Macbook-Pro-2.local>
+Date:   Sat Apr 29 12:23:55 2017 -0500
+
+    rebooting
+
+[33mcommit b306fc243eaec458b679087366755c5b3f113b45[m
+Author: Fernando Baz <Fernando@BazNakauma-Macbook-Pro-2.local>
+Date:   Sat Apr 29 10:06:52 2017 -0500
+
+    changing config for backup deployment
+
+[33mcommit 41d7c344b30b4894cc43683eb2c14ed7655b38a7[m
+Author: Fernando Baz <Fernando@BazNakauma-Macbook-Pro-2.local>
+Date:   Sat Apr 29 10:00:27 2017 -0500
+
+    /game -> /
+
+[33mcommit fb391318de8b12d25e14d37db46c29c8d0fd4614[m
+Author: Fernando Baz <Fernando@BazNakauma-Macbook-Pro-2.local>
+Date:   Fri Apr 28 21:18:33 2017 -0500
+
+    roll back
+
+[33mcommit 8b005d640059b2b975a1da69f8427b14d12a4eba[m
+Author: Fernando Baz <Fernando@BazNakauma-Macbook-Pro-2.local>
+Date:   Fri Apr 28 21:12:36 2017 -0500
+
+    rebuilt bundle.js
+
+[33mcommit 9c2c96080103a80a64ec3be2f5b78365aebf4d5a[m
+Author: Fernando Baz <Fernando@BazNakauma-Macbook-Pro-2.local>
+Date:   Fri Apr 28 20:34:43 2017 -0500
+
+    remove ignore
+
+[33mcommit 633f6b1529eedf9869c59ff6e823d78529e4ab5c[m
+Author: Fernando Baz <Fernando@BazNakauma-Macbook-Pro-2.local>
+Date:   Fri Apr 28 19:58:53 2017 -0500
+
+    start
+
+[33mcommit 052495499c84c521fa0d035b0f9684ff6eaffe96[m
+Author: Fernando Baz <bazfer@gmail.com>
+Date:   Fri Apr 28 19:44:24 2017 -0500
+
+    Initial commit
