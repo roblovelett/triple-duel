@@ -42,10 +42,33 @@ class LittleBoards extends React.Component {
         console.log('frm here', this.state.records);
         return (
             <div className='wrapper'>
-							<ul className='leaderboards'>
-								{this.renderRecords()}
-							</ul>
-						</div>
+				<div className='littleboard container center-align'>
+					<div className='row littleboard-header'>
+						<div className='col s12 m6 l3'>Name</div>
+						<div className='col s12 m6 l3'>Wins</div>
+						<div className='col s12 m6 l3'>Losses</div>
+						<div className='col s12 m6 l3'>Disconnects</div>
+					</div>
+					<div key='record-id-01' className='row littleboard-user'>
+						<div className='col s12 m6 l3'>John Doe</div>
+						<div className='col s12 m6 l3'>999</div>
+						<div className='col s12 m6 l3'>0</div>
+						<div className='col s12 m6 l3'>0</div>
+					</div>
+					<div key='record-id-02' className='row littleboard-user'>
+						<div className='col s12 m6 l3'>Jane Doe</div>
+						<div className='col s12 m6 l3'>500</div>
+						<div className='col s12 m6 l3'>10</div>
+						<div className='col s12 m6 l3'>5</div>
+					</div>
+					<div key='record-id-03' className='row littleboard-user'>
+						<div className='col s12 m6 l3'>Foobar</div>
+						<div className='col s12 m6 l3'>0</div>
+						<div className='col s12 m6 l3'>999</div>
+						<div className='col s12 m6 l3'>25</div>
+					</div>
+				</div>
+			</div>
         );
     }
 };
