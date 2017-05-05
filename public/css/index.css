@@ -311,22 +311,23 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 110%;
-    font-size: 24px; }
-    .gu-mirror .powers div {
-      font-family: Kefa-Regular;
-      color: white;
-      text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; }
-    .gu-mirror .powers .powers-middle {
-      display: flex;
-      flex-direction: row; }
-    .gu-mirror .powers .powers-top {
-      align-items: center;
-      margin: 3px 0px 0px 6px; }
-    .gu-mirror .powers .powers-bottom {
-      align-items: center;
-      margin: 0px 0px 0px 6px; }
-  .gu-mirror .powers > div {
-    flex-grow: 1; }
+    font-size: 24px;
+    font-family: Kefa-Regular;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; }
+  .gu-mirror .powers:nth-of-type(1) {
+    margin-left: 20px; }
+  .gu-mirror .powers:nth-of-type(2) {
+    margin-top: 30px; }
+  .gu-mirror .powers:nth-of-type(3) {
+    margin-top: 30px;
+    margin-left: 30px; }
+  .gu-mirror .powers:nth-of-type(4) {
+    margin-left: 20px;
+    margin-top: 55px; }
+
+.powers > div {
+  flex-grow: 1; }
 
 /* USER INTERFACE */
 .btn {
@@ -468,11 +469,18 @@ body {
   margin-top: 12px;
   display: flex; }
   .game .hand {
-   /*padding: 3px;
-  border-radius: 6px;
-  border: 2px solid $brown;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
-  background-color: $sh-brown;*/
+    /*padding: 3px;
+<<<<<<< HEAD
+        border-radius: 6px;
+        border: 2px solid $brown;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+        background-color: $sh-brown;*/
+=======
+    border-radius: 6px;
+    border: 2px solid $brown;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+    background-color: $sh-brown;*/
+>>>>>>> 031167b6789b900c705eb680700cf26eb3b84ad6
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -498,22 +506,20 @@ body {
       z-index: 10;
       display: flex;
       flex-direction: column;
-      line-height: 110%; }
-      .game .card .powers div {
-        font-family: Kefa-Regular, Helvetica, sans-serif;
-        color: white;
-        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
-      .game .card .powers .powers-middle {
-        display: flex;
-        flex-direction: row; }
-      .game .card .powers .powers-top {
-        align-items: center;
-        margin: 3px 0px 0px 3px; }
-      .game .card .powers .powers-bottom {
-        align-items: center;
-        margin: 0px 0px 0px 3px; }
-    .game .card .powers > div {
-      flex-grow: 1; }
+      line-height: 110%;
+      font-family: Kefa-Regular, Helvetica, sans-serif;
+      color: white;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+    .game .card .powers:nth-of-type(1) {
+      margin-left: 15px; }
+    .game .card .powers:nth-of-type(2) {
+      margin-top: 22px; }
+    .game .card .powers:nth-of-type(3) {
+      margin-top: 22px;
+      margin-left: 21px; }
+    .game .card .powers:nth-of-type(4) {
+      margin-left: 15px;
+      margin-top: 37px; }
   .game .board {
     display: flex;
     flex-direction: row;
@@ -570,6 +576,53 @@ body {
   .chat-box .chat-input:-ms-input-placeholder {
     color: #039BE5; }
 
+.littleboard {
+  margin-top: 12px; }
+
+.littleboard {
+  flex-grow: 1;
+  background-color: #918674;
+  border: 3px solid #371800;
+  border: #afa491 1px solid;
+  border-radius: 6px;
+  margin: 20px 30px -3px 30px;
+  padding: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  border-bottom: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+  .littleboard .littleboard-header {
+    color: #EBA828;
+    font-family: Kefa-Regular;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    background: #371800;
+    border: 2px solid #592E0D;
+    border-bottom: 3px solid #592E0D;
+    margin: -4px -4px 0px -4px !important;
+    padding: 12px;
+    font-family: Kefa-Regular;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 90%;
+    font-size: 16px;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px; }
+  .littleboard .littleboard-user {
+    margin: 0;
+    padding: 6px;
+    text-align: center;
+    border-top: #afa491 1px solid;
+    border-right: #6b6151 solid 1px;
+    border-bottom: #6b6151 solid 1px;
+    border-left: #afa491 1px solid;
+    margin: 0 -4px 0px -4px !important;
+    padding: 12px;
+    font-family: Kefa-Regular;
+    line-height: 90%;
+    font-size: 16px;
+    text-align: center; }
+
 .color1 {
   background-color: #EB7D28 !important; }
 
@@ -583,13 +636,10 @@ body {
       max-width: 86px;
       line-height: 120%;
       margin-left: 9px; }
-
   .main {
     height: 91vh; }
-
   .rooms-bar::-webkit-scrollbar {
     height: 0 !important; }
-
   .rooms-bar {
     order: 2;
     width: 100%;
@@ -613,7 +663,6 @@ body {
           font-size: 36px; }
       .rooms-bar .room-button .room-status {
         display: none; }
-
   .game {
     order: 1;
     flex-grow: 5;
@@ -651,9 +700,9 @@ body {
       .game .board .cell {
         width: 72px;
         height: 108px; }
-
   .chat-box {
     display: none; } }
+
 @media only screen and (min-width: 415px) {
   .nav-wrap {
     height: 8vh; }
@@ -670,13 +719,10 @@ body {
       margin: 0px 9px; }
     .nav-wrap .nav-links a {
       font-size: 24px; }
-
   .main {
     flex-direction: row; }
-
   .rooms-bar::-webkit-scrollbar {
     width: 0 !important; }
-
   .rooms-bar {
     order: 1;
     flex-direction: column;
@@ -706,7 +752,6 @@ body {
           font-size: 16px;
           text-align: center;
           line-height: 90%; }
-
   .game {
     order: 2;
     flex-direction: column;
@@ -748,13 +793,13 @@ body {
       .game .board .cell {
         width: 120px;
         height: 180px; }
-
   .chat-box {
     flex-grow: 5;
     min-width: 80%; }
     .chat-box .chat {
       font-size: 16px;
       line-height: 120%; } }
+
 @media only screen and (min-width: 769px) {
   .nav-wrap {
     height: 9vh; }
@@ -765,18 +810,14 @@ body {
       font-size: 60px; }
     .nav-wrap .nav-links a {
       font-size: 20px; }
-
   .main {
     height: auto; }
-
   .rooms-bar::-webkit-scrollbar {
     width: 0 !important; }
-
   .rooms-bar {
     overflow-y: scroll;
     margin-left: 6px;
     margin-right: 6px; }
-
   .game {
     flex-direction: row;
     justify-content: center; }
@@ -789,9 +830,9 @@ body {
     .game .card:not(:first-child) {
       margin-left: 0px;
       margin-top: -74px; }
-
   .chat-box {
     display: none; } }
+
 @media only screen and (min-width: 806px) {
   .board {
     margin-right: 9px;
@@ -800,7 +841,6 @@ body {
     .board .cell {
       width: 120px !important;
       height: 180px !important; }
-
   .chat-box {
     min-width: 270px;
     display: flex;
@@ -811,5 +851,3 @@ body {
     height: 558px; }
     .chat-box .chat-input {
       height: 30px; } }
-
-/*# sourceMappingURL=index.css.map */

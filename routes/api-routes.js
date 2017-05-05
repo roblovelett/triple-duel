@@ -86,7 +86,11 @@ module.exports = function(app,passport) {
 	});
 	// route to get leaderboards data
 	app.get('/leaderboard', (req, res) => {
-		db.User_Record.findAll({}).then((payload) => {
+		var query = {};
+		db.User_Record.findAll({
+			where: query,
+      include: [db.User]
+		}).then((payload) => {
 			res.json(payload);
 		})
 	})
